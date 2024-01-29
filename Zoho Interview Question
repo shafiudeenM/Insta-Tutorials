@@ -1,0 +1,63 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shafiudeenM/Insta-Tutorials/blob/main/Zoho%20Interview%20Question\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "id": "zwFnJsE6vjf8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "26afdec9-07c0-42a5-bf09-75ee3c653665"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "CMPUUUTR\n"
+          ]
+        }
+      ],
+      "source": [
+        "input = \"COEMPUUUTER\"\n",
+        "vowels=\"AEIOU\"\n",
+        "output=\"\"\n",
+        "\n",
+        "for x in input:\n",
+        "  if x in vowels:\n",
+        "    if input[input.index(x)+1] == x:\n",
+        "      output = output+x\n",
+        "    else:\n",
+        "      pass\n",
+        "  else:\n",
+        "    output = output+x\n",
+        "print(output)"
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
