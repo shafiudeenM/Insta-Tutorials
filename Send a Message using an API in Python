@@ -1,16 +1,16 @@
 from twilio.rest import Client
 
-account_sid = "AC35707104b29bcadc949cfacea57a77e2"
+account_sid = "AC3***********************a77e2"
 
-auth_token = "0ec93fcef5daa5af30e5c541b7637824"
+auth_token = "0ec9***********************37824"
 
 client = Client(account_sid, auth_token)
 
-phone_number = client.lookups.phone_numbers('+16592216699').fetch()
+phone_number = client.lookups.phone_numbers('+165*******').fetch()
 message = client.messages.create(
     body="Vanakam da Maple",
     from_=phone_number.phone_number,
-    to='+91 9976068788'
+    to='+91 **********'
 )
 
 print(message.sid)
